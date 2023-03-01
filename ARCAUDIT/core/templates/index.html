@@ -1,0 +1,120 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+    <style>
+        
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=radio]{
+
+/* The background will be the radio dot's color. */
+background: #004080;
+}
+
+input[type=file]{
+
+  font-family:'Comic Sans MS';
+  border-radius: 5px;
+  background-color: #e6f2ff;
+  color:black;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+div {
+    font-family:'Comic Sans MS';
+  border-radius: 5px;
+  background-color: #cce6ff;
+  padding: 20px;
+}
+
+div h1{
+    font-family:'Courier New', Courier, monospace;
+  border-radius: 5px;
+  background-color: #004080;
+  color:white;
+  padding: 20px;
+}
+
+div label{
+    font-family:'Comic Sans MS';
+  border-radius: 5px;
+  background-color: #99ccff;
+  color:white;
+  padding: 10px;
+}
+    </style>
+</head>  
+<body style="background-color: whitesmoke">  
+    <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; color: #004080;">360 ARC AUDIT</h1>
+    <div>
+        
+<form method="POST" class="post-form" enctype="multipart/form-data">  
+        {% csrf_token %}  
+        <h1>ARC Info</h1>
+        {{ form.as_p }} 
+        <h1>ARC Location</h1>
+        {{ corm.as_p }} 
+        <h1>Financial</h1> 
+        {{ forn.as_p }} 
+        <h1>Workforce Info Work Area</h1>
+        {{ worm.as_p }} 
+        <h1>Repair Info</h1>
+        {{ rorm.as_p }} 
+        <h1>Equipement Info</h1>
+        {{ qorm.as_p }}
+        <h1>Establishment/المنشأة</h1>
+        {{est.as_p}}
+        <h1>Reception and Management /الاستقبال وإدارة</h1>
+        {{ rec.as_p }}
+        <h1>Employees/العاملين</h1>
+        {{ emp.as_p }}
+        <h1>Services/الخدمات</h1>
+        {{ ser.as_p }}
+        <h1>Facilities/المرافق</h1>
+        {{ dell.as_p }}
+        <h1>Devices and Equipment/الأجهزة والمعدات</h1>
+        {{ dev.as_p }}
+        <h1>Services and geographical location of the establishmen/الخدمات والموقع الجغرافي للمنشأة</h1>
+        {{ al1.as_p }}
+        <h1>Requirements for healthy and safe working environment/متطلبات الصحة وسلامة بيئة العمل</h1>
+        {{ al2.as_p }}
+        <h1>Effective documentation of the establishment's operationsResult/التوثيق الفعال لأعمال المنشأة</h1>
+        {{ al3.as_p }}
+        <h1>Utilized spare parts/ قطع الغيار المستخدمة</h1>
+        {{ al4.as_p }}
+        <h1>Training and employees qualifications/التدريب وكفاءة الموظفين</h1>
+        {{ al5.as_p }}
+        <h1>Main Devices and Equipment/ الأجهزة والمعدات الأساسية</h1>
+        {{ al6.as_p }} 
+        <input type="submit" class="save btn btn-default"></input>  
+    </form>
+    </div>
+    <br>
+</body>  
+</html> 
